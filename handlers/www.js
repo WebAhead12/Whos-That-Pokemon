@@ -5,6 +5,7 @@ const type = {
   html: "text/html",
   css: "text/css",
   js: "application/javascript",
+  jpg: "image/jpg",
 };
 
 const www = (request, response) => {
