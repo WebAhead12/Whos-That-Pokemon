@@ -1,19 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="www/style.css" />
-    <title>Whos That Pokemon</title>
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="www/style.css" />
+  <title>Whos That Pokemon</title>
+</head>
+
+<body>
+  <div class="input">
     <div class="container">
       <input class="pokemonSearch" type="text" placeholder="Search..." />
       <div class="search" id="search"></div>
     </div>
     <div class="pokemonResults"></div>
-    <script src="www/script.js"></script>
-  </body>
+  </div>
+  <div class="body">
+    <div class="card">
+      <div class="img">
+        <img src="24.png" alt="pokemon_img" class="pokemonImg">
+      </div>
+      <div class="info">
+        <h1 class="name"></h1>
+        <p class="types"></p>
+        <table class="card__stats">
+          <tbody>
+            <tr>
+              <th>HP:</th>
+              <td>55</td>
+            </tr>
+            <tr>
+              <th>Attack:</th>
+              <td>55</td>
+            </tr>
+
+            <tr>
+              <th>Defense:</th>
+              <td>50</td>
+            </tr>
+
+            <tr>
+              <th>Special Attack:</th>
+              <td>45</td>
+            </tr>
+            <tr>
+              <th>Special Defense:</th>
+              <td>65</td>
+            </tr>
+            <tr>
+              <th>Speed:</th>
+              <td>55</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="abilities"></h3><br>
+        <div class="widthHeight">
+          <h3 class="height"></h3>
+          <h3 class="weight"></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="www/script.js"></script>
+</body>
+
 </html>
