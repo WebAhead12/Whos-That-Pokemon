@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:700");
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700');
+:root{
+  --borderColor: white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -189,6 +193,7 @@ td{
 .name{
     text-align: center;
     font-size: 25px;
+    margin-bottom: 2px;
 }
 
 .types{
@@ -202,6 +207,19 @@ td{
 .abilities{
   text-align: center;
   margin-top: 2%;
+}
+
+.type1{
+  border: 2px solid;
+  border-radius: 6px;
+  padding: 2px 4px;
+  margin-right: 4px;
+}
+
+.type2{
+  border: 2px solid;
+  border-radius: 6px;
+  padding: 2px 4px;
 }
 
 @media only screen and (min-width: 1100px){

@@ -9,7 +9,6 @@ function dataHandler(request, response) {
       respond.writeHead(500, { "content-type": "application/json" });
       response.end({});
     } else {
-
       const data = new URLSearchParams(request.url.split("?")[1]);
       const query = data.get("q");
       let pokemons = [];
