@@ -127,7 +127,7 @@ body {
   transform: rotate(-45deg);
 }
 .container input::placeholder {
-  color: #fff;
+  color: darkgreen;
   opacity: 0.5;
   font-weight: bolder;
 }
@@ -157,7 +157,7 @@ body {
 .card__container {
   font-family: "Open Sans", Helvetica, sans-serif;
   text-align: center;
-
+  margin: 25px auto;
 }
 .card {
       /* display: inline-block; */
@@ -223,24 +223,20 @@ td{
 }
 
 @media only screen and (min-width: 1400px){
-  .pokemonResults{
-    margin-top: 10%;
+  .container{
+    margin-bottom: 50px;
   }
-}
-/* @media only screen and (min-width:1000px) and (max-width:1400px){
   .pokemonResults{
-    margin-top: 25%;
+    margin-top: 15%;
   }
   .card__container {
-    margin: 300px auto;
+    margin: 50px auto;
   }
-  .container .testClass {
-    top: -800px;
+  .card {
+    margin: 50px auto;
   }
-  .container .testClass ~ .search {
-    top: -800px;
-    right: -230px;
-  } */
+  
+}
 @media only screen and (min-width:1000px) and (max-width:1400px){
   .pokemonResults{
     margin-top: 3%;
