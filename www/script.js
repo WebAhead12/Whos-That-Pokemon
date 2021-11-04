@@ -37,6 +37,7 @@ const typeColors = {
 };
 
 input.addEventListener("keyup", (event) => {
+  resultsDiv.classList.add("pokemonResults");
   fetch("/data?q=" + input.value)
     .then((response) => {
       if (!response.ok) throw new Error(response.status);
@@ -54,6 +55,7 @@ input.addEventListener("keyup", (event) => {
 
         searchResult.addEventListener("click", (event) => {
           input.value = searchResult.textContent;
+          resultsDiv.classList.remove("pokemonResults");
           resultsDiv.innerHTML = "";
           fetchData(poke.url)
           card.style.display = "inline-block"
